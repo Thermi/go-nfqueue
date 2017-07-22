@@ -33,8 +33,11 @@ iptables -I INPUT 1  -m conntrack --ctstate NEW -j NFQUEUE --queue-balance 0:5 -
 Notes
 -----
 
-You must run the executable as root or with the capabilitiy CAP_NET_ADMIN (Wild guess, actually not documented)
+You must run the executable as root or with the capabilitiy CAP_NET_ADMIN
 This is *WIP*, but all patches are welcome.
+
+libnetfilter_queue project page: https://www.netfilter.org/projects/libnetfilter_queue/
+libnetfilter_queue documentation: https://www.netfilter.org/projects/libnetfilter_queue/doxygen/
 
 License
 -------
