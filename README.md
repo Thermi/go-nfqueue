@@ -1,10 +1,13 @@
+**This is in Development**
+**Use the dev branch**
+
 Go-NFQueue
 ==========
 Go Wrapper For Creating IPTables' NFQueue clients in Go
 
 Usage
 ------
-Check the `examples/main.go` file
+Check the `examples/test.go` file
 
 ```bash
 	cd $GOPATH/github.com/OneOfOne/go-nfqueue/examples
@@ -30,7 +33,7 @@ iptables -I INPUT 1  -m conntrack --ctstate NEW -j NFQUEUE --queue-balance 0:5 -
 Notes
 -----
 
-You must run the executable as root.
+You must run the executable as root or with the capabilitiy CAP_NET_ADMIN (Wild guess, actually not documented)
 This is *WIP*, but all patches are welcome.
 
 License
